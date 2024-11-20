@@ -13,19 +13,19 @@ const imageAlts = {
   'pic2.jpg': 'A sandstone rock formation',
   'pic3.jpg': 'Purple and white flowers',
   'pic4.jpg': 'An ancient Egyptian painting',
-  'pic5.jpg': 'A butterfly on a green leaf'
+  'pic5.jpg': 'A butterfly on a green leaf',
 };
 
 /* Looping through images */
 imageFilenames.forEach((filename) => {
   const newImage = document.createElement('img');
-  newImage.setAttribute('src', `images/${filename}`);
+  newImage.setAttribute('src', filename); // Reference the root-level path
   newImage.setAttribute('alt', imageAlts[filename]);
   thumbBar.appendChild(newImage);
 
   // Add click event to update the displayed image
   newImage.addEventListener('click', () => {
-    displayedImage.setAttribute('src', `images/${filename}`);
+    displayedImage.setAttribute('src', filename); // Reference the root-level path
     displayedImage.setAttribute('alt', imageAlts[filename]);
   });
 });
