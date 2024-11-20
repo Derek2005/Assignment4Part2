@@ -13,7 +13,7 @@ const imageAlts = {
   'pic2.jpg': 'A sandstone rock formation',
   'pic3.jpg': 'Purple and white flowers',
   'pic4.jpg': 'An ancient Egyptian painting',
-  'pic5.jpg': 'A butterfly on a green leaf',
+  'pic5.jpg': 'A butterfly on a green leaf'
 };
 
 /* Looping through images */
